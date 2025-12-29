@@ -26,7 +26,6 @@ app.post('/api/recipe', async (req, res) => {
             max_tokens: 1000
         });
         
-        // Format response to match Anthropic's structure for frontend compatibility
         const response = {
             content: [
                 {
