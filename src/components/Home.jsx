@@ -30,7 +30,7 @@ const Home = () => {
         setRecipe(null)
          
         try {
-            const response = await fetch('/api/recipe',{
+            const response = await fetch('http://localhost:3001/api/recipe',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
