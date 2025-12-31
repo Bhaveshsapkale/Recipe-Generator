@@ -93,6 +93,18 @@ app.post('/api/recipe', limiter, async (req, res) => {
     }
 });
 
+// Root endpoint
+app.get('/', (req, res) => {
+    res.json({ 
+        message: 'Recipe Generator API',
+        status: 'running',
+        endpoints: {
+            health: '/health',
+            recipe: '/api/recipe (POST)'
+        }
+    });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
