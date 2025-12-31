@@ -5,14 +5,14 @@ Built to practice React, API handling, and deployment — and yeah, it actually 
 
 🚀 Live Demo
 
-👉 https://bhaveshsapkale.github.io/Recipe-Generator
+👉 https://recipe-generator-front-end.onrender.com/
 
 🛠 Tech Stack
 
 Frontend: React + Vite
 Styling: CSS / Tailwind (use what applies)
-AI: OpenAI API
-Deployment: GitHub Pages / Vercel
+AI: GEMINI API
+Deployment: Render
 
 ✨ Features
 
@@ -41,7 +41,7 @@ npm run dev
 
 Create a .env file in the root directory:
 
-VITE_OPENAI_API_KEY=your_api_key_here
+VITE_GEMINI_API_KEY=your_api_key_here
 
 
 ⚠️ Important:
@@ -70,7 +70,7 @@ Git & GitHub best practices
 
 API key is exposed in frontend (not production-safe)
 
-Rate limits depend on OpenAI usage
+Rate limits depend on Google Gemini usage
 
 Backend version recommended for real-world use
 
